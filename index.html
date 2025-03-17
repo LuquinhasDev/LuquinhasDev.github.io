@@ -1,29 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Desenvolvedor Roblox e JavaScript">
-    <title>Meu Portfólio</title>
+    <title>Meu Portfólio - Desenvolvedor Roblox Studio</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #007bff; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00b4d8, #0077b6);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #caf0f8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: #00b4d8;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0077b6;
+            display: inline-block;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #2d2d2d;
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #90e0ef;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0077b6;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Olá, eu sou [Seu Nome] 👋</h1>
-    <p>Desenvolvedor de jogos no Roblox Studio e programador em JavaScript.</p>
+    <header>
+        <h1>Lucas</h1>
+        <p>Desenvolvedor de Jogos no Roblox Studio</p>
+    </header>
 
-    <h2>Projetos</h2>
-    <ul>
-        <li><a href="#">Jogo de Luta no Roblox</a></li>
-        <li><a href="#">Bot de Tickets para Discord</a></li>
-        <li><a href="#">Simulador de Músculo</a></li>
-    </ul>
+    <div class="container">
+        <section class="section">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Lucas e sou um desenvolvedor apaixonado por criar experiências incríveis no Roblox Studio. Tenho experiência em Lua, design de jogos e construção de mundos imersivos que encantam jogadores de todas as idades.</p>
+        </section>
 
-    <h2>Contato</h2>
-    <p><a href="https://github.com/LuquinhasDev">GitHub</a> | <a href="https://www.roblox.com/users/266206705">Perfil Roblox</a></p>
+        <section class="section">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Jogo de Aventura</h3>
+                    <p>Um jogo de exploração com mapas detalhados e missões emocionantes. Feito com Roblox Studio e scripts personalizados em Lua.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Simulador de Corrida</h3>
+                    <p>Um simulador de corrida com física realista e personalização de veículos, criado do zero no Roblox Studio.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Obby Personalizado</h3>
+                    <p>Um obby desafiador com obstáculos únicos e design criativo, otimizado para diversão multiplayer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contato</h2>
+            <p>Quer colaborar ou saber mais sobre meu trabalho? Entre em contato comigo!</p>
+            <p>Email: <a href="mailto:seuemail@example.com">lucasborgespinheiro2006@example.com</a></p>
+            <p>Roblox: <a href="https://www.roblox.com/users/seu-perfil" target="_blank">@0Lusscaa</a></p>
+            <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/LuquinhasDev</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lucas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
